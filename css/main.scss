@@ -49,7 +49,9 @@ a {
     height: 100%;
     padding-bottom: 15px;
     margin-top: .4em;
-    
+    &__home,&__home:hover {
+        color: #000;
+    }
     a {
         img {
             border-radius: 50%;
@@ -115,11 +117,21 @@ a {
     color: #fff;
     background: #C06014;
     padding-left: 10px;
-    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+    @include breakpoint(medium) {
+        -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+    }
+    i {
+        color: #fff;
+        float: right;
+        margin-top: 10px;
+        margin-right: 20px;
+        font-size: 25px;
+    }
     &__title {
         padding-top: .5rem;
         width: 80%;
+        display: inline-flex;
     }
     &__date {
         padding-bottom: 10px;
@@ -131,8 +143,10 @@ a {
     padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+    @include breakpoint(medium) {
+        -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+    }
 }
 .disclaimer {
     padding-top: 10px;
