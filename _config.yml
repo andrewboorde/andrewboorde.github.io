@@ -18,3 +18,12 @@ lsi: false
 sass:
    sass_dir: _sass
    style: compressed
+
+# Profile links on the left sidebar, leave blank to ignore
+social:
+  github: andrewboorde
+  bitbucket: andrewboorde 
+  #twitter: _swanson
+  #facebook: zuck
+  linkedin: aboorde
+  gravatar: 1bc22e8b8accf3339f5f7dd2c4c9ba5f

@@ -1,6 +1,10 @@
-<h1>Hi.</h1>
+<h1>Bork.</h1>
 <a href="/">
-    <img src="http://placehold.it/100x100" id="logo" alt="Blog logo"/>
+    {% if site.social.gravatar %}
+        <img src="http://www.gravatar.com/avatar/{{ site.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+        <img src="http://placehold.it/100x100" id="logo" alt="Blog logo"/>
+    {% endif %}
 </a>
 <h2>I'm <a href="/">{{ site.name }}</a>.</h2>
 <div id="bio">
