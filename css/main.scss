@@ -1,9 +1,6 @@
 ---
 ---
 
-$primary-color: green;
-$secondary-color: blue;
-$dropdownmenu-background: orange;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "syntax-highlighting";
 @import '../_sass/foundation';
@@ -19,8 +16,9 @@ h1,h2,h3 {
 }
 a {
     color: #C06014;
-    &:hover {
+    &:hover,&:focus {
         color: #C06014;
+        outline: none;
     }
 }
 
@@ -70,6 +68,10 @@ a {
         i {
             font-size: 20px;
             color: #C06014;
+            transition: .15s;
+        }
+        i:hover {
+            font-size: 30px;
         }
     }
 }
@@ -91,17 +93,29 @@ a {
         color: #A9A9A9;
         font-size: 0.75rem;
     }
+    li {
+        border-bottom: 2px dotted #C06014;
+    }
     .post-meta {
         color: #A9A9A9;
         font-size: 0.75rem;
     }
 }
 .post-header {
+    color: #fff;
+    background: #C06014;
+    padding-left: 10px;
     &__title {
-        text-align: right;
+        padding-top: .5rem;
     }
     &__date {
-        text-align: right;
-        color: #A9A9A9;
+        padding-bottom: 10px;
     }
+}
+.page-heading {
+    background: #C06014;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
