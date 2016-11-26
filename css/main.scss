@@ -105,8 +105,11 @@ a {
     color: #fff;
     background: #C06014;
     padding-left: 10px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
     &__title {
         padding-top: .5rem;
+        width: 80%;
     }
     &__date {
         padding-bottom: 10px;
@@ -118,4 +121,6 @@ a {
     padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
 }
