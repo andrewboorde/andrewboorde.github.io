@@ -1,49 +1,37 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+$primary-color: green;
+$secondary-color: blue;
+$dropdownmenu-background: orange;
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "syntax-highlighting";
+@import '../_sass/foundation';
 
+@include foundation-everything;
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+body {
+    border-top: 7px solid #C06014;
+}
+.highlight {
+    pre {
+        border: 1px solid #ddd;
+        background-color: #eef;
+        padding: 0 .4em;
+        margin-bottom: 20px !important;
+        white-space: pre;
+        overflow: auto;
+    }
+    code {
+        border: none;
+        background-color: #eef;
+        font-size: 85%;
+        padding: 0 .2em;
     }
 }
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.boorde-blog {
+    margin-top: 15px;
+}
+.sidebar-container {
+    border-right: 1px solid #CDCDCD;
+}

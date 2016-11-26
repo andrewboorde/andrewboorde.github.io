@@ -1,6 +1,15 @@
 /**
  * Syntax highlighting styles
  */
+$spacing-unit:     30px;
+
+ h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
 .highlight {
     background: #fff;
     @extend %vertical-rhythm;

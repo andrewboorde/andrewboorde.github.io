@@ -1,0 +1,23 @@
+{
+  "name": "andrewboorde.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "foundation-sites": "^6.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewboorde/andrewboorde.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewboorde/andrewboorde.github.io/issues"
+  },
+  "homepage": "https://github.com/andrewboorde/andrewboorde.github.io#readme"
+}

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
+    <div class="row boorde-blog">
+      <div class="medium-3 show-for-medium columns sidebar-container" data-sticky-container>
+        <div data-sticky>
+          {% include sidebar.html %}
+        </div>
+      </div>
+      <div class="medium-9 columns">
 
-    {% include header.html %}
+        <main>
+          {{ content }}
+        </main>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+        {% include footer.html %}
       </div>
     </div>
-
-    {% include footer.html %}
-
+    
+  
   </body>
-
 </html>
