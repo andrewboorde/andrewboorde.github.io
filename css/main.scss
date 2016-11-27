@@ -1,23 +1,26 @@
 ---
 ---
 
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "syntax-highlighting";
 @import '../_sass/foundation';
 
 @include foundation-everything;
 
+$site-main-color: #6D7993;
+
 body {
-    border-top: 7px solid #C06014;
+    border-top: 7px solid $site-main-color;
     font-family: 'Open Sans', sans-serif;
 }
 h1,h2,h3 {
     font-family: 'Roboto Slab', serif;
 }
 a {
-    color: #C06014;
+    color: $site-main-color;
     &:hover,&:focus {
-        color: #C06014;
+        color: $site-main-color;
         outline: none;
     }
 }
@@ -69,7 +72,7 @@ a {
         font-weight: 600;
         i {
             font-size: 20px;
-            color: #C06014;
+            color: $site-main-color;
             transition: .15s;
         }
         i:hover {
@@ -95,9 +98,11 @@ a {
         margin: 0 1.25rem;
         color: #A9A9A9;
         font-size: 0.75rem;
+        margin-left: .25rem;
+        margin-right: .5rem;
     }
     li:not(:last-child) {
-        border-bottom: 2px dotted #C06014;
+        border-bottom: 2px dotted $site-main-color;
         padding-bottom: .55rem;
     }
     p {
@@ -110,12 +115,14 @@ a {
         font-size: 0.75rem;
     }
     &__button {
-
+        color: $site-main-color !important;
+        border-color: $site-main-color !important;
+        border-radius: 5px;
     }
 }
 .post-header {
     color: #fff;
-    background: #C06014;
+    background: $site-main-color;
     padding-left: 10px;
     @include breakpoint(medium) {
         -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 85% 0);
@@ -138,7 +145,7 @@ a {
     }
 }
 .page-heading {
-    background: #C06014;
+    background: $site-main-color;
     color: #fff;
     padding-left: 10px;
     padding-top: 20px;
@@ -166,16 +173,21 @@ a {
         width: 25px;
     }
     span {
-        margin-right: 15px;
+        margin-right: 12px;
         display: inline-block;
         align-self: center;
     }
     i {
         font-size: 20px;
-        color: #C06014;
+        color: $site-main-color;
         transition: .15s;
     }
     i:hover {
         font-size: 30px;
+    }
+}
+.post-content {
+    a {
+        color: #2199e8;
     }
 }

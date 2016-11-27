@@ -12,11 +12,12 @@ layout: default
         <h4>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h4>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         {% if post.content contains '<!-- more -->' %}
           <p class="post-list__content">{{ post.content | split:'<!-- more -->' | first }}
           </p>
-          <a href="{{ post.url }}"class="btn btn-primary btn-sm post-list__button">Read More</a>
+          <a href="{{ post.url }}"class="post-list__button">Read More</a>
           {% else %}
             {{ post.content }}
         {% endif %}
