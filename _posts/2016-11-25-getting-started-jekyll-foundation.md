@@ -19,7 +19,7 @@ the source is available [HERE][source-link].
 
 
 
-## Prerequsites
+#### Prerequsites
 
 * Ruby
 * Terminal or Powershell
@@ -28,7 +28,7 @@ the source is available [HERE][source-link].
 * [Foundation 6][foundation-link]
 * [Node.js][node-link]
 
-## Making a new project with Jekyll and Github Pages
+#### Making a new project with Jekyll and Github Pages
 
 First we will need to make a repository on github, so head over there and make a repository that 
 has the name `USERNAME.github.io` . This will allow you to automatically have a page deployed of the same name. 
@@ -49,7 +49,7 @@ Jekyll creates a page that utilizes markdown and their own default styling. Whil
 nice to create blog posts, I find having the page constructed in html and sass to be much more 
 familiar. From here, we will construct a different skeleton while integrating Foundation.
 
-## Refactoring Jekyll with Foundation
+#### Refactoring Jekyll with Foundation
 
 First we will need to add to the folder structure in order to override jekyll defaults and have 
 a place for some foundation assets. In the root of your project you will need to add:
